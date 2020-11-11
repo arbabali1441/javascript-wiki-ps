@@ -1,0 +1,27 @@
+<script>
+
+const myFavProg = ['JavaScript', 'PHP', 'Java', 'C', 'Python'];
+
+// console.log(myFavProg[0]);
+// console.log(myFavProg[1]);
+// console.log(myFavProg[2]);
+// console.log(myFavProg[3]);
+// console.log(myFavProg[4]);
+
+// for (let x=0; x<myFavProg.length; x++){
+//   console.log(myFavProg[x]);
+// }
+
+myFavProg.forEach(function(currentValue, index ){
+  console.log(index + " -- " + currentValue);
+})
+
+// Create one array. For each elemet in the array: Add the value 
+// 100 to each items and update the element value
+
+const newArr = [10, 20,30,40,50];
+newArr.forEach(function(val, ind, arr){
+   console.log(arr[ind] + 100);
+})
+
+</script>
