@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Do/While Loop JS</title>
+  <title>Arrays JS</title>
   <script>
     var abc = [10,20,30,40,50];
-      document.write(abc);
+    var sum = 0;
+      document.write("<ul>")
+      for(var a = 0; a <= 4; a++){
+        document.write("<li>" + abc[a] + ("</li>"));
+        sum = sum + abc[a];
+      }
+      document.write("</ul>")
+      document.write("Total sum : " + sum);
   </script>
 </head>
 <body>
